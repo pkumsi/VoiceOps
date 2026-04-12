@@ -3,6 +3,27 @@
 VoiceOps is a real-time clinical voice assistant that converts raw audio into structured, privacy-safe medical summaries.  
 The system is designed to be robust to noisy environments and domain-specific transcription errors, with a focus on safety and interpretability.
 
+In real-world healthcare settings, clinicians often rely on voice notes or live conversations to capture patient information. However, automatic speech recognition systems frequently struggle with:
+- medical terminology (e.g., “lisinopril” misheard as “liz and opryl”)
+- numeric accuracy (e.g., “fifteen” vs “fifty”)
+- negations (e.g., “no chest pain” vs “chest pain”)
+- noisy environments such as clinics, calls, or crowded spaces
+
+These errors are not just inconvenient — they can lead to incorrect clinical understanding, unsafe decisions, and loss of trust in automated systems.
+
+VoiceOps addresses this by combining:
+- real-time transcription for low-latency interaction
+- domain-aware correction using retrieval and a learned gating model
+- structured extraction of clinically relevant entities
+- privacy-first redaction before any downstream processing
+- controlled summarization tailored for clinician or patient use
+
+The system is built with a core focus on:
+- **robustness** to noisy and imperfect input  
+- **safety** through guarded correction and PII handling  
+- **interpretability**, ensuring every correction and decision can be inspected  
+
+VoiceOps is not just a transcription tool — it is a reliability layer on top of speech systems for high-stakes domains like healthcare.
 ---
 
 ## Overview
@@ -135,6 +156,7 @@ pip install -r requirements.txt
 Create `.env`:
 
 OPENROUTER_API_KEY=your_key
+
 SUMMARY_PROVIDER=openrouter
 
 
