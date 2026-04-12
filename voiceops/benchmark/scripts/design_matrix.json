@@ -1,0 +1,104 @@
+{
+  "benchmark_name": "VoiceOps-HealthBench",
+  "version": "0.1",
+  "language_scope": "english_only",
+  "description": "A benchmark for evaluating STT robustness on healthcare telephony audio under degradation, accent variation, numeric ambiguity, and safety-critical phrasing.",
+  "axes": {
+    "audio_condition": [
+      {
+        "id": "A1",
+        "name": "clean",
+        "description": "Clean speech, minimal distortion, 16kHz or higher."
+      },
+      {
+        "id": "A2",
+        "name": "telephony_8khz",
+        "description": "Narrowband telephony-style audio at 8kHz."
+      },
+      {
+        "id": "A3",
+        "name": "telephony_noise",
+        "description": "8kHz telephony audio with added realistic background noise."
+      },
+      {
+        "id": "A4",
+        "name": "telephony_echo",
+        "description": "8kHz telephony audio with speakerphone/echo artifacts."
+      }
+    ],
+    "speech_variation": [
+      {
+        "id": "S1",
+        "name": "clear",
+        "description": "Clear, deliberate English speech."
+      },
+      {
+        "id": "S2",
+        "name": "fast_conversational",
+        "description": "Fast, natural conversational English."
+      },
+      {
+        "id": "S3",
+        "name": "hesitant_disfluent",
+        "description": "Hesitations, fillers, self-corrections, broken phrasing."
+      },
+      {
+        "id": "S4",
+        "name": "accented_english",
+        "description": "English speech with accent variation."
+      }
+    ],
+    "clinical_challenge": [
+      {
+        "id": "C1",
+        "name": "control",
+        "description": "No major medical term or numeric ambiguity."
+      },
+      {
+        "id": "C2",
+        "name": "medication_heavy",
+        "description": "Contains one or more medication names likely to be mistranscribed."
+      },
+      {
+        "id": "C3",
+        "name": "numeric_heavy",
+        "description": "Contains dosages, quantities, times, or frequencies that are safety-critical."
+      },
+      {
+        "id": "C4",
+        "name": "negation_critical",
+        "description": "Contains medically meaningful negation such as no chest pain or no insulin."
+      }
+    ]
+  },
+  "failure_taxonomy": [
+    {
+      "id": "F1",
+      "name": "domain_term_substitution",
+      "description": "Medical term is replaced by a phonetically plausible but incorrect phrase."
+    },
+    {
+      "id": "F2",
+      "name": "numeric_instability",
+      "description": "Critical numbers or dosage values are mistranscribed."
+    },
+    {
+      "id": "F3",
+      "name": "negation_loss",
+      "description": "Negation words are dropped or altered, changing clinical meaning."
+    },
+    {
+      "id": "F4",
+      "name": "accent_induced_misrecognition",
+      "description": "Accent variation causes repeated or systematic misrecognition."
+    }
+  ],
+  "target_metrics": [
+    "wer",
+    "cer",
+    "domain_keyword_accuracy",
+    "numeric_accuracy",
+    "negation_preservation_accuracy",
+    "safety_critical_error_rate"
+  ]
+}

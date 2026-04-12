@@ -1,0 +1,146 @@
+{
+  "VOX_001": {
+    "reference_transcript": "The patient is feeling better after the appointment and will follow up next Thursday morning.",
+    "entities": {
+      "medications": [],
+      "dosages": [],
+      "frequencies": [],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "follow_up",
+    "risk_flag": false
+  },
+  "VOX_002": {
+    "reference_transcript": "The patient needs metformin 500 milligrams twice daily with meals.",
+    "entities": {
+      "medications": ["metformin"],
+      "dosages": ["500 milligrams"],
+      "frequencies": ["twice daily"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "medication_instruction",
+    "risk_flag": false
+  },
+  "VOX_003": {
+    "reference_transcript": "I need a refill for lisinopril ten milligrams once daily.",
+    "entities": {
+      "medications": ["lisinopril"],
+      "dosages": ["ten milligrams"],
+      "frequencies": ["once daily"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "prescription_refill",
+    "risk_flag": false
+  },
+  "VOX_004": {
+    "reference_transcript": "Please continue atorvastatin twenty milligrams every night.",
+    "entities": {
+      "medications": ["atorvastatin"],
+      "dosages": ["twenty milligrams"],
+      "frequencies": ["every night"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "medication_instruction",
+    "risk_flag": false
+  },
+  "VOX_005": {
+    "reference_transcript": "Take fifteen units before breakfast and fifty units before dinner.",
+    "entities": {
+      "medications": [],
+      "dosages": ["fifteen units", "fifty units"],
+      "frequencies": ["before breakfast", "before dinner"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "dose_instruction",
+    "risk_flag": true
+  },
+  "VOX_006": {
+    "reference_transcript": "The patient is not taking insulin and has no chest pain today.",
+    "entities": {
+      "medications": ["insulin"],
+      "dosages": [],
+      "frequencies": [],
+      "symptoms": ["chest pain"],
+      "negations": ["not taking insulin", "no chest pain"]
+    },
+    "intent": "clinical_status_update",
+    "risk_flag": true
+  },
+  "VOX_007": {
+    "reference_transcript": "Uh the patient should keep taking amlodipine five milligrams every morning.",
+    "entities": {
+      "medications": ["amlodipine"],
+      "dosages": ["five milligrams"],
+      "frequencies": ["every morning"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "medication_instruction",
+    "risk_flag": false
+  },
+  "VOX_008": {
+    "reference_transcript": "The patient is taking metformin five hundred milligrams twice daily and denies dizziness.",
+    "entities": {
+      "medications": ["metformin"],
+      "dosages": ["five hundred milligrams"],
+      "frequencies": ["twice daily"],
+      "symptoms": ["dizziness"],
+      "negations": ["denies dizziness"]
+    },
+    "intent": "clinical_status_update",
+    "risk_flag": false
+  },
+  "VOX_009": {
+    "reference_transcript": "I need hydroxyzine twenty five milligrams tonight because the itching is worse.",
+    "entities": {
+      "medications": ["hydroxyzine"],
+      "dosages": ["twenty five milligrams"],
+      "frequencies": ["tonight"],
+      "symptoms": ["itching"],
+      "negations": []
+    },
+    "intent": "prescription_refill",
+    "risk_flag": false
+  },
+  "VOX_010": {
+    "reference_transcript": "Please take omeprazole forty milligrams before breakfast and no ibuprofen for now.",
+    "entities": {
+      "medications": ["omeprazole", "ibuprofen"],
+      "dosages": ["forty milligrams"],
+      "frequencies": ["before breakfast"],
+      "symptoms": [],
+      "negations": ["no ibuprofen"]
+    },
+    "intent": "medication_instruction",
+    "risk_flag": true
+  },
+  "VOX_011": {
+    "reference_transcript": "Change torsemide from ten milligrams to twenty milligrams starting tomorrow.",
+    "entities": {
+      "medications": ["torsemide"],
+      "dosages": ["ten milligrams", "twenty milligrams"],
+      "frequencies": ["starting tomorrow"],
+      "symptoms": [],
+      "negations": []
+    },
+    "intent": "dose_change",
+    "risk_flag": true
+  },
+  "VOX_012": {
+    "reference_transcript": "The patient reports shortness of breath but no fever and no vomiting.",
+    "entities": {
+      "medications": [],
+      "dosages": [],
+      "frequencies": [],
+      "symptoms": ["shortness of breath", "fever", "vomiting"],
+      "negations": ["no fever", "no vomiting"]
+    },
+    "intent": "symptom_report",
+    "risk_flag": true
+  }
+}

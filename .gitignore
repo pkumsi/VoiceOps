@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual env
+.venv/
+env/
+
+# Mac
+.DS_Store
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# API keys
+.env
+
+# Large audio (optional but recommended)
+voiceops/benchmark/audio/
+voiceops/benchmark/noise/

@@ -1,0 +1,122 @@
+[
+  {
+    "sample_id": "VOX_001",
+    "wer": 0.0,
+    "cer": 0.0,
+    "keyword_acc": 1.0,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient is feeling better after the appointment and will follow up next Thursday morning.",
+    "reference": "The patient is feeling better after the appointment and will follow up next Thursday morning."
+  },
+  {
+    "sample_id": "VOX_002",
+    "wer": 0.2,
+    "cer": 0.13636363636363635,
+    "keyword_acc": 0.6666666666666666,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient needs metformin 500mg twice daily with meals.",
+    "reference": "The patient needs metformin 500 milligrams twice daily with meals."
+  },
+  {
+    "sample_id": "VOX_003",
+    "wer": 0.4,
+    "cer": 0.2982456140350877,
+    "keyword_acc": 0.5,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "I need a refill for less in April 10mg once daily.",
+    "reference": "I need a refill for lisinopril ten milligrams once daily."
+  },
+  {
+    "sample_id": "VOX_004",
+    "wer": 0.42857142857142855,
+    "cer": 0.3050847457627119,
+    "keyword_acc": 0.3333333333333333,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "Please continue at Orbastatin 20mg every night.",
+    "reference": "Please continue atorvastatin twenty milligrams every night."
+  },
+  {
+    "sample_id": "VOX_005",
+    "wer": 0.6,
+    "cer": 0.2727272727272727,
+    "keyword_acc": 0.5,
+    "numeric_acc": 0.5,
+    "negation_acc": 1.0,
+    "hypothesis": "Ah hey take 15 units before breakfast and 15 units before dinner",
+    "reference": "Take fifteen units before breakfast and fifty units before dinner."
+  },
+  {
+    "sample_id": "VOX_006",
+    "wer": 0.0,
+    "cer": 0.0,
+    "keyword_acc": 1.0,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient is not taking insulin and has no chest pain today.",
+    "reference": "The patient is not taking insulin and has no chest pain today."
+  },
+  {
+    "sample_id": "VOX_007",
+    "wer": 0.45454545454545453,
+    "cer": 0.25333333333333335,
+    "keyword_acc": 0.6666666666666666,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient should keep taking amlodipine 5 milligrams every day, every morning.",
+    "reference": "Uh the patient should keep taking amlodipine five milligrams every morning."
+  },
+  {
+    "sample_id": "VOX_008",
+    "wer": 0.23076923076923078,
+    "cer": 0.2247191011235955,
+    "keyword_acc": 0.75,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient is taking metformin 500 mg twice daily and denies dizziness.",
+    "reference": "The patient is taking metformin five hundred milligrams twice daily and denies dizziness."
+  },
+  {
+    "sample_id": "VOX_009",
+    "wer": 0.3333333333333333,
+    "cer": 0.27848101265822783,
+    "keyword_acc": 0.3333333333333333,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "I need hydroxylzene 25mg tonight because the itching is worse.",
+    "reference": "I need hydroxyzine twenty five milligrams tonight because the itching is worse."
+  },
+  {
+    "sample_id": "VOX_010",
+    "wer": 0.9166666666666666,
+    "cer": 0.3902439024390244,
+    "keyword_acc": 0.25,
+    "numeric_acc": 0.0,
+    "negation_acc": 0.0,
+    "hypothesis": "Please take on my Pro Zaule 14 Lg before breakfast, and now I will profin for now.",
+    "reference": "Please take omeprazole forty milligrams before breakfast and no ibuprofen for now."
+  },
+  {
+    "sample_id": "VOX_011",
+    "wer": 0.8,
+    "cer": 0.5,
+    "keyword_acc": 0.25,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "Keep change Torsi Mede from 10mg to 20mg starting tomorrow.",
+    "reference": "Change torsemide from ten milligrams to twenty milligrams starting tomorrow."
+  },
+  {
+    "sample_id": "VOX_012",
+    "wer": 0.08333333333333333,
+    "cer": 0.014492753623188406,
+    "keyword_acc": 1.0,
+    "numeric_acc": 1.0,
+    "negation_acc": 1.0,
+    "hypothesis": "The patient reports shortness of breath, but no fever and no vomiting.",
+    "reference": "The patient reports shortness of breath but no fever and no vomiting."
+  }
+]

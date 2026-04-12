@@ -1,0 +1,578 @@
+[
+  {
+    "sample_id": "VOX_001",
+    "reference": "The patient is feeling better after the appointment and will follow up next Thursday morning.",
+    "baseline_0_raw": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is feeling better after the appointment and will follow up next Thursday morning."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is feeling better after the appointment and will follow up next Thursday morning."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is feeling better after the appointment and will follow up next Thursday morning."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is feeling better after the appointment and will follow up next Thursday morning."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_002",
+    "reference": "The patient needs metformin 500 milligrams twice daily with meals.",
+    "baseline_0_raw": {
+      "wer": 0.2,
+      "cer": 0.13636363636363635,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient needs metformin 500mg twice daily with meals."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient needs metformin 500 milligrams twice daily with meals."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.4,
+      "cer": 0.3484848484848485,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The metformin 500mg twice daily with meals."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.2,
+      "cer": 0.13636363636363635,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient needs metformin 500mg twice daily with meals."
+    },
+    "baseline_2_corrections": [
+      {
+        "type": "ungated_phrase_correction",
+        "original": "patient needs metformin",
+        "clean_span": "patient needs metformin",
+        "corrected": "metformin",
+        "retrieval_score": 0.7017,
+        "gate_probability": null,
+        "semantic_score": 0.8373,
+        "fuzzy_score": 0.5625,
+        "phonetic_score": 0.5714,
+        "features": {
+          "semantic_score": 0.8372814655303955,
+          "fuzzy_score": 0.5625,
+          "phonetic_score": 0.5714285714285714,
+          "word_count": 3,
+          "contains_stopword": 1,
+          "contains_digit": 0
+        }
+      }
+    ],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_003",
+    "reference": "I need a refill for lisinopril ten milligrams once daily.",
+    "baseline_0_raw": {
+      "wer": 0.4,
+      "cer": 0.2982456140350877,
+      "keyword_acc": 0.5,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need a refill for less in April 10mg once daily."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.4,
+      "cer": 0.14035087719298245,
+      "keyword_acc": 0.5,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need a refill for less in April 10 milligrams once daily."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.4,
+      "cer": 0.2982456140350877,
+      "keyword_acc": 0.5,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need a refill for less in April 10mg once daily."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.4,
+      "cer": 0.2982456140350877,
+      "keyword_acc": 0.5,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need a refill for less in April 10mg once daily."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_004",
+    "reference": "Please continue atorvastatin twenty milligrams every night.",
+    "baseline_0_raw": {
+      "wer": 0.42857142857142855,
+      "cer": 0.3050847457627119,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Please continue at Orbastatin 20mg every night."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.42857142857142855,
+      "cer": 0.15254237288135594,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Please continue at Orbastatin 20 milligrams every night."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.42857142857142855,
+      "cer": 0.3050847457627119,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Please continue at Orbastatin 20mg every night."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.42857142857142855,
+      "cer": 0.3050847457627119,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Please continue at Orbastatin 20mg every night."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_005",
+    "reference": "Take fifteen units before breakfast and fifty units before dinner.",
+    "baseline_0_raw": {
+      "wer": 0.6,
+      "cer": 0.2727272727272727,
+      "keyword_acc": 0.5,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "Ah hey take 15 units before breakfast and 15 units before dinner"
+    },
+    "baseline_1_normalized": {
+      "wer": 0.6,
+      "cer": 0.2727272727272727,
+      "keyword_acc": 0.5,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "Ah hey take 15 units before breakfast and 15 units before dinner"
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.6,
+      "cer": 0.2727272727272727,
+      "keyword_acc": 0.5,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "Ah hey take 15 units before breakfast and 15 units before dinner"
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.6,
+      "cer": 0.2727272727272727,
+      "keyword_acc": 0.5,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "Ah hey take 15 units before breakfast and 15 units before dinner"
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_006",
+    "reference": "The patient is not taking insulin and has no chest pain today.",
+    "baseline_0_raw": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is not taking insulin and has no chest pain today."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is not taking insulin and has no chest pain today."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.16666666666666666,
+      "cer": 0.1774193548387097,
+      "keyword_acc": 0.5,
+      "numeric_acc": 1.0,
+      "negation_acc": 0.5,
+      "hypothesis": "The patient is not insulin has no chest pain today."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is not taking insulin and has no chest pain today."
+    },
+    "baseline_2_corrections": [
+      {
+        "type": "ungated_phrase_correction",
+        "original": "taking insulin and",
+        "clean_span": "taking insulin and",
+        "corrected": "insulin",
+        "retrieval_score": 0.7068,
+        "gate_probability": null,
+        "semantic_score": 0.8671,
+        "fuzzy_score": 0.56,
+        "phonetic_score": 0.5263,
+        "features": {
+          "semantic_score": 0.8671413064002991,
+          "fuzzy_score": 0.56,
+          "phonetic_score": 0.5263157894736843,
+          "word_count": 3,
+          "contains_stopword": 1,
+          "contains_digit": 0
+        }
+      }
+    ],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_007",
+    "reference": "Uh the patient should keep taking amlodipine five milligrams every morning.",
+    "baseline_0_raw": {
+      "wer": 0.45454545454545453,
+      "cer": 0.25333333333333335,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient should keep taking amlodipine 5 milligrams every day, every morning."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.45454545454545453,
+      "cer": 0.25333333333333335,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient should keep taking amlodipine 5 milligrams every day, every morning."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.5454545454545454,
+      "cer": 0.36,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient should keep amlodipine milligrams every day, every morning."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.45454545454545453,
+      "cer": 0.25333333333333335,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient should keep taking amlodipine 5 milligrams every day, every morning."
+    },
+    "baseline_2_corrections": [
+      {
+        "type": "ungated_phrase_correction",
+        "original": "taking amlodipine 5",
+        "clean_span": "taking amlodipine",
+        "corrected": "amlodipine",
+        "retrieval_score": 0.7681,
+        "gate_probability": null,
+        "semantic_score": 0.8094,
+        "fuzzy_score": 0.7407,
+        "phonetic_score": 0.7059,
+        "features": {
+          "semantic_score": 0.8093860149383545,
+          "fuzzy_score": 0.7407407407407408,
+          "phonetic_score": 0.7058823529411764,
+          "word_count": 2,
+          "contains_stopword": 1,
+          "contains_digit": 0
+        }
+      }
+    ],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_008",
+    "reference": "The patient is taking metformin five hundred milligrams twice daily and denies dizziness.",
+    "baseline_0_raw": {
+      "wer": 0.23076923076923078,
+      "cer": 0.2247191011235955,
+      "keyword_acc": 0.75,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is taking metformin 500 mg twice daily and denies dizziness."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.15384615384615385,
+      "cer": 0.1348314606741573,
+      "keyword_acc": 0.75,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is taking metformin 500 milligrams twice daily and denies dizziness."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.38461538461538464,
+      "cer": 0.34831460674157305,
+      "keyword_acc": 0.75,
+      "numeric_acc": 0.5,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient metformin mg twice daily and denies dizziness."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.23076923076923078,
+      "cer": 0.2247191011235955,
+      "keyword_acc": 0.75,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient is taking metformin 500 mg twice daily and denies dizziness."
+    },
+    "baseline_2_corrections": [
+      {
+        "type": "ungated_phrase_correction",
+        "original": "is taking metformin 500",
+        "clean_span": "is taking metformin",
+        "corrected": "metformin",
+        "retrieval_score": 0.7504,
+        "gate_probability": null,
+        "semantic_score": 0.875,
+        "fuzzy_score": 0.6429,
+        "phonetic_score": 0.6,
+        "features": {
+          "semantic_score": 0.8750438690185547,
+          "fuzzy_score": 0.6428571428571428,
+          "phonetic_score": 0.6,
+          "word_count": 3,
+          "contains_stopword": 1,
+          "contains_digit": 0
+        }
+      }
+    ],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_009",
+    "reference": "I need hydroxyzine twenty five milligrams tonight because the itching is worse.",
+    "baseline_0_raw": {
+      "wer": 0.3333333333333333,
+      "cer": 0.27848101265822783,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need hydroxylzene 25mg tonight because the itching is worse."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.25,
+      "cer": 0.16455696202531644,
+      "keyword_acc": 0.3333333333333333,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need hydroxylzene 25 milligrams tonight because the itching is worse."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.25,
+      "cer": 0.25316455696202533,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need hydroxyzine 25mg tonight because the itching is worse."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.25,
+      "cer": 0.25316455696202533,
+      "keyword_acc": 0.6666666666666666,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "I need hydroxyzine 25mg tonight because the itching is worse."
+    },
+    "baseline_2_corrections": [
+      {
+        "type": "ungated_phrase_correction",
+        "original": "hydroxylzene",
+        "clean_span": "hydroxylzene",
+        "corrected": "hydroxyzine",
+        "retrieval_score": 0.7832,
+        "gate_probability": null,
+        "semantic_score": 0.6713,
+        "fuzzy_score": 0.8696,
+        "phonetic_score": 0.9333,
+        "features": {
+          "semantic_score": 0.6712580919265747,
+          "fuzzy_score": 0.8695652173913043,
+          "phonetic_score": 0.9333333333333332,
+          "word_count": 1,
+          "contains_stopword": 0,
+          "contains_digit": 0
+        }
+      }
+    ],
+    "baseline_3_corrections": [
+      {
+        "type": "gated_phrase_correction",
+        "original": "hydroxylzene",
+        "clean_span": "hydroxylzene",
+        "corrected": "hydroxyzine",
+        "retrieval_score": 0.7832,
+        "gate_probability": 0.7228,
+        "semantic_score": 0.6713,
+        "fuzzy_score": 0.8696,
+        "phonetic_score": 0.9333,
+        "features": {
+          "semantic_score": 0.6712580919265747,
+          "fuzzy_score": 0.8695652173913043,
+          "phonetic_score": 0.9333333333333332,
+          "word_count": 1,
+          "contains_stopword": 0,
+          "contains_digit": 0
+        }
+      }
+    ]
+  },
+  {
+    "sample_id": "VOX_010",
+    "reference": "Please take omeprazole forty milligrams before breakfast and no ibuprofen for now.",
+    "baseline_0_raw": {
+      "wer": 0.9166666666666666,
+      "cer": 0.3902439024390244,
+      "keyword_acc": 0.25,
+      "numeric_acc": 0.0,
+      "negation_acc": 0.0,
+      "hypothesis": "Please take on my Pro Zaule 14 Lg before breakfast, and now I will profin for now."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.9166666666666666,
+      "cer": 0.3902439024390244,
+      "keyword_acc": 0.25,
+      "numeric_acc": 0.0,
+      "negation_acc": 0.0,
+      "hypothesis": "Please take on my Pro Zaule 14 Lg before breakfast, and now I will profin for now."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.9166666666666666,
+      "cer": 0.3902439024390244,
+      "keyword_acc": 0.25,
+      "numeric_acc": 0.0,
+      "negation_acc": 0.0,
+      "hypothesis": "Please take on my Pro Zaule 14 Lg before breakfast, and now I will profin for now."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.9166666666666666,
+      "cer": 0.3902439024390244,
+      "keyword_acc": 0.25,
+      "numeric_acc": 0.0,
+      "negation_acc": 0.0,
+      "hypothesis": "Please take on my Pro Zaule 14 Lg before breakfast, and now I will profin for now."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_011",
+    "reference": "Change torsemide from ten milligrams to twenty milligrams starting tomorrow.",
+    "baseline_0_raw": {
+      "wer": 0.8,
+      "cer": 0.5,
+      "keyword_acc": 0.25,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Keep change Torsi Mede from 10mg to 20mg starting tomorrow."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.6,
+      "cer": 0.2631578947368421,
+      "keyword_acc": 0.25,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Keep change Torsi Mede from 10 milligrams to 20 milligrams starting tomorrow."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.8,
+      "cer": 0.5,
+      "keyword_acc": 0.25,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Keep change Torsi Mede from 10mg to 20mg starting tomorrow."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.8,
+      "cer": 0.5,
+      "keyword_acc": 0.25,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "Keep change Torsi Mede from 10mg to 20mg starting tomorrow."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  },
+  {
+    "sample_id": "VOX_012",
+    "reference": "The patient reports shortness of breath but no fever and no vomiting.",
+    "baseline_0_raw": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient reports shortness of breath, but no fever and no vomiting."
+    },
+    "baseline_1_normalized": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient reports shortness of breath, but no fever and no vomiting."
+    },
+    "baseline_2_retrieval": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient reports shortness of breath, but no fever and no vomiting."
+    },
+    "baseline_3_gated_retrieval": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "keyword_acc": 1.0,
+      "numeric_acc": 1.0,
+      "negation_acc": 1.0,
+      "hypothesis": "The patient reports shortness of breath, but no fever and no vomiting."
+    },
+    "baseline_2_corrections": [],
+    "baseline_3_corrections": []
+  }
+]

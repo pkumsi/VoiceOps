@@ -1,0 +1,30 @@
+{
+  "baseline_0_raw": {
+    "wer": 0.3706,
+    "cer": 0.2228,
+    "keyword_acc": 0.6042,
+    "numeric_acc": 0.875,
+    "negation_acc": 0.9167
+  },
+  "baseline_1_normalized": {
+    "wer": 0.3239,
+    "cer": 0.1489,
+    "keyword_acc": 0.6319,
+    "numeric_acc": 0.875,
+    "negation_acc": 0.9167
+  },
+  "baseline_2_retrieval": {
+    "wer": 0.4146,
+    "cer": 0.2723,
+    "keyword_acc": 0.5903,
+    "numeric_acc": 0.7917,
+    "negation_acc": 0.875
+  },
+  "baseline_3_gated_retrieval": {
+    "wer": 0.3637,
+    "cer": 0.2207,
+    "keyword_acc": 0.6319,
+    "numeric_acc": 0.875,
+    "negation_acc": 0.9167
+  }
+}

@@ -1,0 +1,17 @@
+﻿span,candidate,semantic_score,fuzzy_score,phonetic_score,word_count,contains_stopword,contains_digit,should_correct
+hydroxylzene,hydroxyzine,0.91,0.91,1,1,0,0,1
+less in April,lisinopril,0.88,0.42,0.93,3,0,0,1
+Orbastatin,atorvastatin,0.84,0.78,0.88,1,0,0,1
+Torsi Mede,torsemide,0.83,0.55,0.92,2,0,0,1
+on my Pro Zaule,omeprazole,0.79,0.31,0.74,4,0,0,1
+profin,ibuprofen,0.77,0.44,0.81,1,0,0,1
+needs metformin,metformin,0.83,0.74,0.8,2,0,0,0
+taking insulin,insulin,0.78,0.86,0.95,2,1,0,0
+taking amlodipine,amlodipine,0.77,0.8,0.88,2,1,0,0
+is taking metformin,metformin,0.75,0.76,0.82,3,1,0,0
+continue atorvastatin,atorvastatin,0.76,0.79,0.85,2,1,0,0
+keep taking amlodipine,amlodipine,0.75,0.77,0.84,3,1,0,0
+metformin,metformin,0.99,1,1,1,0,0,0
+insulin,insulin,0.99,1,1,1,0,0,0
+hydroxyzine,hydroxyzine,0.99,1,1,1,0,0,0
+atorvastatin,atorvastatin,0.99,1,1,1,0,0,0
