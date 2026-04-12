@@ -29,7 +29,7 @@ VoiceOps is not just a transcription tool — it is a reliability layer on top o
 https://www.youtube.com/watch?v=RgzeLhEI9T8&t=18s
 
 ## Hosted Website
-https://voice-ops-git-main-pkumsis-projects.vercel.app/
+https://voice-ops-virid.vercel.app/
 
 ---
 ## Overview
