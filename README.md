@@ -25,7 +25,13 @@ The system is built with a core focus on:
 
 VoiceOps is not just a transcription tool — it is a reliability layer on top of speech systems for high-stakes domains like healthcare.
 ---
+## Demo Video
+https://www.youtube.com/watch?v=RgzeLhEI9T8&t=18s
 
+## Hosted Website
+https://voice-ops-git-main-pkumsis-projects.vercel.app/
+
+---
 ## Overview
 
 VoiceOps processes clinical speech through a multi-stage pipeline:
