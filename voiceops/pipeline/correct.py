@@ -1,14 +1,16 @@
+import os
 import re
 from pathlib import Path
-from typing import List, Dict
-import joblib
+from typing import List, Dict, Any
 
-from voiceops.models.retriever.rank_candidates import rank_medical_candidates
+import joblib
 
 STOPWORDS = {"taking", "take", "is", "are", "was", "were", "keep", "continue", "needs"}
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 DETECTOR_PATH = BASE_DIR / "models" / "detectors" / "error_detector.joblib"
+
+ENABLE_RETRIEVAL = os.getenv("ENABLE_RETRIEVAL", "false").lower() == "true"
 
 _detector = None
 
@@ -36,11 +38,13 @@ def looks_like_error(span: str) -> bool:
         return False
     return True
 
+
 COMMON_WORDS = {
     "the", "a", "an", "is", "are", "was", "were", "and", "or",
     "but", "with", "for", "from", "to", "of", "in", "on", "at",
     "patient", "please", "take", "taking", "needs", "need", "keep", "continue"
 }
+
 
 def suspicious_span_score(span: str) -> float:
     words = span.lower().split()
@@ -51,8 +55,7 @@ def suspicious_span_score(span: str) -> float:
     return uncommon / len(words)
 
 
-
-def build_features(span: str, best: Dict) -> Dict:
+def build_features(span: str, best: Dict[str, Any]) -> Dict[str, Any]:
     words = span.lower().split()
     return {
         "semantic_score": best["semantic_score"],
@@ -64,7 +67,7 @@ def build_features(span: str, best: Dict) -> Dict:
     }
 
 
-def should_apply_correction(span: str, best: Dict, prob_threshold: float = 0.55):
+def should_apply_correction(span: str, best: Dict[str, Any], prob_threshold: float = 0.55):
     detector = load_detector()
     feats = build_features(span, best)
 
@@ -82,9 +85,19 @@ def should_apply_correction(span: str, best: Dict, prob_threshold: float = 0.55)
 
 
 def _run_retrieval_correction(text: str, retrieval_threshold: float = 0.70, use_gate: bool = True):
+    # Railway-safe fallback: skip retrieval entirely unless explicitly enabled
+    if not ENABLE_RETRIEVAL:
+        return {
+            "corrected_text": text,
+            "corrections": []
+        }
+
+    # Lazy import so production does not require sentence-transformers unless enabled
+    from voiceops.models.retriever.rank_candidates import rank_medical_candidates
+
     tokens = text.split()
     used = [False] * len(tokens)
-    corrections: List[Dict] = []
+    corrections: List[Dict[str, Any]] = []
     corrected_tokens = tokens.copy()
 
     ngrams = sorted(generate_ngrams(tokens, n=4), key=lambda x: (x[1] - x[0]), reverse=True)
@@ -97,10 +110,9 @@ def _run_retrieval_correction(text: str, retrieval_threshold: float = 0.70, use_
 
         if not looks_like_error(clean):
             continue
-        
+
         if suspicious_span_score(clean) < 0.5:
             continue
-
 
         ranked = rank_medical_candidates(clean, top_k=3)
         best = ranked[0] if ranked else None
