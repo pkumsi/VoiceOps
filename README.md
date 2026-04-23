@@ -155,7 +155,7 @@ source .venv/bin/activate
 
 ### 3. Install dependencies
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 
 ### 4. Environment variables
@@ -169,6 +169,10 @@ SUMMARY_PROVIDER=openrouter
 ---
 
 ## Running the backend
+
+cd voiceops 
+
+python3 -m uvicorn voiceops.api.main:app --reload
 
 API runs at: http://127.0.0.1:8000
 
