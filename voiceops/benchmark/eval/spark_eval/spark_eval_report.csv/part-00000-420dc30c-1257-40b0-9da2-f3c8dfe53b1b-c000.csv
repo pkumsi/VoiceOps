@@ -1,0 +1,7 @@
+baseline_name,condition,KeywordAcc,NumSamples,NumericAcc,CER,NegationAcc,WER
+gated_retrieval,clean,1.0,4,0.0,0.0,,0.0
+gated_retrieval,noisy,0.75,1,0.0,0.1666666716337204,,0.25
+raw_whisper,clean,1.0,3,0.0,0.0,,0.0
+raw_whisper,telephony,0.7700000047683716,5,0.0,0.11984062194824219,,0.2300000011920929
+raw_whisper,noisy,0.7511904835700989,6,0.0,0.1273409826681018,,0.3392857213815053
+gated_retrieval,telephony,1.0,1,0.0,0.0,,0.0

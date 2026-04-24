@@ -1,0 +1,21 @@
+sample_id,condition,reference_text,predicted_text,baseline_name
+s1,clean,"patient has no chest pain","patient has no chest pain",raw_whisper
+s2,noisy,"take lisinopril fifteen mg daily","take liz and opryl fifty mg daily",raw_whisper
+s3,telephony,"no shortness of breath","shortness of breath",raw_whisper
+s4,clean,"patient takes metformin 500 mg twice daily","patient takes metformin 500 mg twice daily",gated_retrieval
+s5,noisy,"no fever or chills","fever or chills",gated_retrieval
+s6,clean,"blood pressure is 120 over 80","blood pressure is 120 over 80",raw_whisper
+s7,noisy,"patient denies headache","patient reports headache",raw_whisper
+s8,telephony,"take insulin ten units nightly","take insulin two units nightly",raw_whisper
+s9,clean,"patient has diabetes type 2","patient has diabetes type 2",gated_retrieval
+s10,noisy,"prescribe amoxicillin 500 mg three times daily","prescribe a moxisilin 500 mg three times daily",raw_whisper
+s11,telephony,"no nausea or vomiting","nausea or vomiting",raw_whisper
+s12,clean,"heart rate is 72 bpm","heart rate is 72 bpm",gated_retrieval
+s13,noisy,"patient reports mild chest discomfort","patient reports wild chest discomfort",raw_whisper
+s14,telephony,"take ibuprofen 200 mg as needed","take ibuprofen 200 mg as needed",gated_retrieval
+s15,clean,"oxygen saturation is 98 percent","oxygen saturation is 98 percent",raw_whisper
+s16,noisy,"no signs of infection","signs of infection",raw_whisper
+s17,telephony,"patient is not taking aspirin","patient is taking aspirin",raw_whisper
+s18,clean,"weight is 70 kilograms","weight is 70 kilograms",gated_retrieval
+s19,noisy,"administer heparin 5 units per kg","administer heparin 50 units per kg",raw_whisper
+s20,telephony,"no abdominal pain reported","abdominal pain reported",raw_whisper
