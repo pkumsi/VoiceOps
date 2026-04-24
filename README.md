@@ -245,6 +245,34 @@ python -m voiceops.eval.ablation
 
 ---
 
+## Spark Offline Analytics Layer
+
+VoiceOps includes a PySpark-based offline analytics pipeline designed to scale evaluation and reliability analysis across large clinical transcript datasets.
+
+### Why Spark?
+While the real-time pipeline prioritizes low latency, large-scale evaluation and model improvement require distributed processing. Apache Spark enables:
+
+- Distributed computation of WER / CER and domain-specific metrics
+- Large-scale analysis of ASR failure patterns (medical terms, numerics, negations)
+- Comparison across multiple baselines and audio conditions (clean, noisy, telephony)
+- Efficient processing of high-volume transcript logs
+
+### Pipeline
+
+Transcript datasets (CSV/JSON)
+→ Spark DataFrame processing
+→ Metric computation (WER, CER, accuracy)
+→ Grouping by condition and baseline
+→ Error pattern extraction
+→ Output reports
+
+### Run Spark Evaluation
+
+```bash
+python3 -m voiceops.spark_jobs.batch_eval_spark \
+  --input voiceops/benchmark/eval_predictions.csv \
+  --output-dir voiceops/benchmark/eval/spark_eval
+  
 ## Example Failure Modes
 
 - Medical term fragmentation (e.g. "lisinopril" → "liz and opryl")
